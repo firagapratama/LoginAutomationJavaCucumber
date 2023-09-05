@@ -33,8 +33,8 @@ public class Login extends env_target {
 
     @When("User fill username and password")
     public void userFillUsernameAndPassword() {
-        driver.findElement(By.name("user_name")).sendKeys("90000002");
-        driver.findElement(By.name("user_password")).sendKeys("satu2tiga");
+        driver.findElement(By.name("user_name")).sendKeys("{your_username}");
+        driver.findElement(By.name("user_password")).sendKeys("{your_password}");
     }
 
     @And("User click login button")
@@ -54,8 +54,8 @@ public class Login extends env_target {
 
     @When("User fill wrong username or password")
     public void userFillWrongUsernameAndPassword() {
-        driver.findElement(By.name("user_name")).sendKeys("90000003");
-        driver.findElement(By.name("user_password")).sendKeys("satuduatiga");
+        driver.findElement(By.name("user_name")).sendKeys("{your_wrong_username}");
+        driver.findElement(By.name("user_password")).sendKeys("{your_wrong_password}");
     }
 
     @Then("User get error message")
